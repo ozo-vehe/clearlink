@@ -79,7 +79,7 @@ const show_answer = ref(false);
       </div>
     </div>
 
-    <div class="footer_socials px-16 bg-[#F9FAFB] flex w-full gap-4 items-center py-12 justify-between">
+    <div class="footer_socials px-16 bg-[#F9FAFB] flex flex-wrap w-full gap-6 items-center py-12 justify-between">
       <p class="text-[14px] text-[#667085] font-[400]">© 2023 ClearLink. All rights reserved.</p>
       <div class="socials flex items-center gap-4">
         <img :src="linkedin" alt="LinkedIn">

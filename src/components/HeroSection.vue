@@ -117,6 +117,9 @@ header {
     margin-top: 15px;
   }
   .header_btn button {
+    font-size: 12px;
+  }
+  .header_btn p {
     font-size: 14px;
   }
   .community {
