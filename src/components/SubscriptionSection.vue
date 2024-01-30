@@ -50,4 +50,46 @@ const show_answer = ref(false);
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 1300px) {
+  .subscription {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sub_info {
+    width: 430px;
+  }
+  .sub_info h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .sub_img {
+    width: 500px;
+  }
+  .sub_img img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .sub_info {
+    width: 400px;
+  }
+  .sub_info h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .sub_img {
+    position: relative;
+    width: 450px;
+    height: 300px;
+  }
+  .sub_img img {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+</style>

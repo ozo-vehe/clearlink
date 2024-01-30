@@ -17,7 +17,7 @@ const show_answer = ref(false);
 
     <div class="questions w-[650px] flex flex-col">
       <div class="question_container flex items-start justify-between p-6 rounded-[16px] bg-[#f9fafb] border border-[#eaecf0] w-full">
-        <div class="max-w-[520px]">
+        <div class="ma-w-[520px]">
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">How many participants can join a ClearLink video conference?</h3>
           <p class="answer text-[14px] text-[#475467] font-[400] leading-[23px]">
             ClearLink offers flexible meeting options. Depending on your subscription plan, you can host
@@ -26,7 +26,7 @@ const show_answer = ref(false);
           </p>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
           <span v-if="show_answer">-</span>
           <span v-else>+</span>
         </div>
@@ -37,9 +37,8 @@ const show_answer = ref(false);
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">Can I use ClearLink on multiple devices?</h3>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
-          <span v-if="show_answer">-</span>
-          <span v-else>+</span>
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+          <span>+</span>
         </div>
       </div>
 
@@ -48,9 +47,8 @@ const show_answer = ref(false);
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">Is ClearLink compatible with other video conferencing platforms?</h3>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
-          <span v-if="show_answer">-</span>
-          <span v-else>+</span>
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+          <span>+</span>
         </div>
       </div>
 
@@ -59,9 +57,8 @@ const show_answer = ref(false);
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">How does ClearLink ensure the security of my video conferences?</h3>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
-          <span v-if="show_answer">-</span>
-          <span v-else>+</span>
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+          <span>+</span>
         </div>
       </div>
 
@@ -70,9 +67,8 @@ const show_answer = ref(false);
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">Do I need to download any software to use ClearLink?</h3>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
-          <span v-if="show_answer">-</span>
-          <span v-else>+</span>
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+          <span>+</span>
         </div>
       </div>
 
@@ -81,13 +77,18 @@ const show_answer = ref(false);
           <h3 class="question text-[16px] text-[#101b2b] leading-[30px] font-[600]">What kind of customer support does ClearLink provide?</h3>
         </div>
 
-        <div @click="show_answer = !show_answer" class="cursor-pointer w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
-          <span v-if="show_answer">-</span>
-          <span v-else>+</span>
+        <div @click="show_answer = !show_answer" class="cursor-pointer min-w-[24px] rounded-full h-[24px] icons flex border border-[#98A2B3] text-[#98A2B3] items-center justify-center">
+          <span>+</span>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 800px) {
+  .faq {
+    padding: 40px 20px;
+  }
+}
+</style>

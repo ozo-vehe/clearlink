@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import header_img from '../assets/img_03.png';
 import users from '../assets/img_04.png';
 import star from '../assets/img_05.png';
@@ -73,4 +72,59 @@ header {
   min-height: calc(100vh - 130px);
 }
 
+@media screen and (max-width: 1400px) {
+  .header_text {
+    width: 450px;
+  }
+  .header_text h1 {
+    font-size: 40px;
+  }
+  .header_text p {
+    font-size: 18px;
+  }
+  .header_btn {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .header_btn button {
+    font-size: 14px;
+  }
+  .header_btn p {
+    font-size: 14px;
+  }
+  .header_btn svg {
+    width: 18px;
+  }
+
+  .header_img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  .header_text h1 {
+    font-size: 40px;
+  }
+  .header_text p {
+    font-size: 18px;
+  }
+  .header_btn {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .header_btn button {
+    font-size: 14px;
+  }
+  .community {
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .community p {
+    font-size: 14px;
+  }
+}
 </style>

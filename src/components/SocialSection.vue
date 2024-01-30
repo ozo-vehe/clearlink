@@ -44,4 +44,19 @@ const social_images = [
 </template>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .social_proof {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .social_images {
+    padding: 10px;
+    gap: 20px 10px;
+    justify-content: center;
+  }
+  .social_images img {
+    height: 20px;
+  }
+}
 </style>

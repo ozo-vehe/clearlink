@@ -96,4 +96,21 @@ const social_images = [
 </template>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .about_clearlink {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header_container h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .header_container p {
+    font-size: 16px;
+  }
+  .services {
+    justify-content: center;
+  }
+}
 </style>

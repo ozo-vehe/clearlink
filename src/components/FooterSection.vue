@@ -18,7 +18,7 @@ const show_answer = ref(false);
       <div class="footer_logo w-[370px]">
         <div class="logo flex items-center gap-2 mb-5">
           <img :src="logo" alt="Logo">
-          <p class="text-[24px] text-[#101828] font-[600]">ClearLink</p>
+          <p class="text-[20px] text-[#101828] flex font-[600]">ClearLink <span class="text-[#528BFF]">.</span></p>
         </div>
 
         <p class="text-[16px] text-[#475467] font-[400] leading-[25px]">ClearLink is your gateway to effortless, high-quality video conferencing. Join us in shaping the future of communication!</p>
@@ -36,7 +36,7 @@ const show_answer = ref(false);
           </ul>
         </div>
 
-        <div class="product w-[150px]">
+        <div class="company w-[150px]">
           <h3 class="text-[#667085] text-[14px] font-[600] mb-4">Company</h3>
           <ul class="text-[16px] text-[#475467] font-[600] flex flex-col gap-4">
             <li>About us</li>
@@ -47,7 +47,7 @@ const show_answer = ref(false);
           </ul>
         </div>
 
-        <div class="product w-[150px]">
+        <div class="resources w-[150px]">
           <h3 class="text-[#667085] text-[14px] font-[600] mb-4">Resources</h3>
           <ul class="text-[16px] text-[#475467] font-[600] flex flex-col gap-4">
             <li>Blog</li>
@@ -58,7 +58,7 @@ const show_answer = ref(false);
           </ul>
         </div>
 
-        <div class="product w-[150px]">
+        <div class="legal w-[150px]">
           <h3 class="text-[#667085] text-[14px] font-[600] mb-4">Legal</h3>
           <ul class="text-[16px] text-[#475467] font-[600] flex flex-col gap-4">
             <li>Terms</li>
@@ -93,4 +93,32 @@ const show_answer = ref(false);
   </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.socials img {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 0px;
+  }
+  .footer_desc {
+    padding: 0px 20px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .testimony > p {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  .footer_content {
+    justify-content: flex-start;
+    gap: 50px 10px;
+  }
+  .footer_socials {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+</style>

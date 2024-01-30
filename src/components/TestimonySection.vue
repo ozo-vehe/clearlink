@@ -8,7 +8,7 @@ import left from '../assets/img_21.png';
 </script>
 
 <template>
-  <section class="testimony bg-[#F9FAFB] py-24 px-16 flex flex-wrap gap-12 justify-center">
+  <section class="testimony_section bg-[#F9FAFB] py-24 px-16 flex flex-wrap gap-12 justify-center">
     <div class="header_container w-[600px]">
       <header class="mb-20">
         <img class="w-[100px] mb-5" :src="shopify" alt="Shopify">
@@ -46,4 +46,16 @@ import left from '../assets/img_21.png';
 </template>
 
 <style scoped>
+@media screen and (max-width: 800px) {
+  .testimony_section {
+    padding: 40px 20px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .testimony > p {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}
 </style>
