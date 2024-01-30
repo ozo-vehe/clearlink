@@ -104,5 +104,8 @@ const links = [
   .nav_links, .nav_btns {
     display: none;
   }
+  .logo p {
+    font-size: 18px;
+  }
 }
 </style>
