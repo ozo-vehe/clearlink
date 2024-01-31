@@ -10,7 +10,7 @@ import TestimonySection from './components/TestimonySection.vue';
 import { inject } from '@vercel/analytics/*';
 import { onMounted } from 'vue';
 
-omMounted(() => {
+onMounted(() => {
   inject()
 })
 </script>
