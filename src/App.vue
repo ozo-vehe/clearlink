@@ -7,7 +7,7 @@ import Navbar from './components/Navbar.vue';
 import SocialSection from './components/SocialSection.vue';
 import SubscriptionSection from './components/SubscriptionSection.vue';
 import TestimonySection from './components/TestimonySection.vue';
-import { inject } from '@vercel/analytics/*';
+import { inject } from '@vercel/analytics';
 import { onMounted } from 'vue';
 
 onMounted(() => {
